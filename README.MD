@@ -5,7 +5,6 @@ Things that i would improve on my current CRUD solution but could not due to lac
 
 - Add Lambda Authorizer for security.
 - Add schema validation for incoming bodies.
-- Add a delete with a path parameter (I created the DELETE before i learned how the GET worked with path parameters.)
 - Add integer or list attributes/values in database. For example with countries(list) or pages(integer) attributes.
 - Make query be able to query certain values instead of only the whole record.
 - Add Testing.
