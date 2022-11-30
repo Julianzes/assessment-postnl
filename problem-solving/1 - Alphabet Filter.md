@@ -15,21 +15,25 @@ s = `"onomatopoeia"`
 For a given definition of a class LetterFilter, complete its methods filter_vowels and filter_consonants. The class takes a string in the constructor and stores it to its s attribute. The method filter_vowels must return a new string with all vowels removed from it. Similarly, the method filter_consonants must return a new string with all consonants removed from it.
 
 ```python
-class LetterFilter:
-    def init(self, s):
-        self.s = s
+class LetterFilter():
+    def __init__(self, s):
+        self.s = list(s)
+        self.vowels = "a","e","i","o","u"
 
     def filter_vowels(self):
-        # Enter your code here
-        # Return a string
-        return ""
+        for count, letter in enumerate(self.s):
+            if letter in self.vowels:
+                self.s.pop(count)
+        word = "".join(self.s)
+        return word
 
     def filter_consonants(self):
-        # Enter your code here
-        # Return a string
+        for count, letter in enumerate(self.s):
+            if letter not in self.vowels:
+                self.s.pop(count)
+        word = "".join(self.s)
         
-        return ""
-    
+        return word
 ```
 
 ## Constraints

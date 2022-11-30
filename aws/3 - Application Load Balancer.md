@@ -12,4 +12,5 @@ The development team at an IT company has configured an Application Load Balance
 How can the development team address this issue?
 ```
 
+In this case i would first investigate why the Lambda is reaching its concurrency Limits and if it is needed. If so then you can request a concurrency limit increase with AWS.
 
