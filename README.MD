@@ -5,8 +5,8 @@ Things that i would improve on my current CRUD solution but could not due to lac
 
 - Add Lambda Authorizer for security.
 - Add schema validation for incoming bodies.
-- Add integer or list attributes/values in database. For example with countries(list) or pages(integer) attributes.
-- Make query be able to query certain values instead of only the whole record.
+- Add integer or list attributes/values in DynamoDB. For example with countries(list) or pages(integer) attributes.
+- Make query function be able to query certain values instead of only the whole record.
 - Add Testing.
 
 I would love to discuss this case further and learn what best practices are for solutions like this.
