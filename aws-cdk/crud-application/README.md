@@ -17,6 +17,7 @@ Below you will find instructions on how to use the APi. Examples are given.
 ### Create record
 To create a record use PUT with the following body:
 POST /books
+```json
 {
     "payload": [
         {
@@ -39,12 +40,13 @@ POST /books
         }
     ]
 }
-
+```
 One or multiple books can be added at the same time.
 
 ### Update record
 To update a record use PUT with the following body.
 PUT /books
+``` json
 {
     "payload": {
         {
@@ -57,7 +59,7 @@ PUT /books
             "releaseDate": "<string>"
         }
 }
-
+```
 ### Delete record
 To delete a record use DELETE with the isbn number in the api path.
 DELETE /books/{isbn}
